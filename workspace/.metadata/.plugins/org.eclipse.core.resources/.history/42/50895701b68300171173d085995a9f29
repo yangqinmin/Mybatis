@@ -1,8 +1,0 @@
-package com.imooc.db;
-
-/*
- * 访问数据库类
- */
-public class DBAccess {
-	
-}
