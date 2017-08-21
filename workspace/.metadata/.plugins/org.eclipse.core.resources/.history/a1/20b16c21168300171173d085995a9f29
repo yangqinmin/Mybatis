@@ -1,0 +1,26 @@
+package com.imooc.bean;
+
+/**
+ * 
+ * @author chairman
+ * 与消息表对应的实体类
+ *
+ */
+public class Message {
+	/*
+	 * 主键
+	 */
+	private String id;
+	/*
+	 * 指令内容
+	 */
+	private String command;
+	/*
+	 * 描述
+	 */
+	private String id;
+	/*
+	 * 内容
+	 */
+	private String id;
+}

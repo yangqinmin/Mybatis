@@ -1,0 +1,5 @@
+package com.imooc.dao;
+
+public class MessageDao {
+
+}

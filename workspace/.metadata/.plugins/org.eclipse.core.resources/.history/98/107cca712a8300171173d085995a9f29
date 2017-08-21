@@ -1,0 +1,8 @@
+package com.imooc.service;
+
+/*
+ * 列表相关的业务功能
+ */
+public class ListService {
+
+}

@@ -1,0 +1,11 @@
+package com.imooc.servlet;
+
+/**
+ * 
+ * @author chairman
+ * 列表页面初始化控制
+ *
+ */
+public class ListServlet {
+
+}
