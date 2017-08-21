@@ -43,6 +43,49 @@ public class MessageDao {
 		return messageList;
 	}
 	
+	/*
+	 * 单条删除
+	 */
+	public void deleteOne(int id){
+		DBAccess dbAccess = new DBAccess();
+		SqlSession sqlSession=null;
+		try {
+			sqlSession = dbAccess.getSqlSession();
+			//通过SqlSession执行SQL语句
+			sqlSession.delete("Message.deleteOne",id);
+			sqlSession.commit();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}finally{
+			if(sqlSession!=null){
+				sqlSession.close();
+			}	 
+		}
+	}
+	
+	/*
+	 * 批量删除
+	 */
+	public void deleteBatch(List<Integer> ids){
+		DBAccess dbAccess = new DBAccess();
+		SqlSession sqlSession=null;
+		try {
+			sqlSession = dbAccess.getSqlSession();
+			//通过SqlSession执行SQL语句
+			sqlSession.delete("Message.deleteBatch",ids);
+			sqlSession.commit();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}finally{
+			if(sqlSession!=null){
+				sqlSession.close();
+			}	 
+		}
+	}
+	
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		MessageDao messageDao=new MessageDao();
 		messageDao.queryMessageList("", "");

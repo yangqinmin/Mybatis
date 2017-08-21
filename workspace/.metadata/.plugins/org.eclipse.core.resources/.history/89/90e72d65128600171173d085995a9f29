@@ -1,0 +1,13 @@
+package com.imooc.service;
+
+/*
+ * 维护相关的业务功能
+ */
+public class MaintainService {
+	/*
+	 * 单条删除
+	 */
+	public void deleteOne(int id){
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.imooc.service;
+
+/*
+ * 维护相关的业务功能
+ */
+public class MaintainService {
+
+}

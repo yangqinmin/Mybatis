@@ -1,0 +1,10 @@
+package com.imooc.servlet;
+
+import javax.servlet.http.HttpServlet;
+
+/*
+ * µ¥ÌõÉ¾³ı¿ØÖÆ²ã
+ */
+public class DeleteOneServlet extends HttpServlet{
+
+}
